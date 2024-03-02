@@ -1,6 +1,6 @@
 FROM tomcat:alpine
 MAINTAINER rautpr2990@gmail.com
-
+WORKDIR /usr/local/tomcat
 WORKDIR /usr/local/tomcat/webapps
 ADD https://tomcat.apache.org/tomcat-8.5-doc/appdev/sample/sample.war .
 EXPOSE 8080
